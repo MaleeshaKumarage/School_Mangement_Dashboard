@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\School Managment DashBoard\\School Managment DashBoard.csproj": {}
+    "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\School Managment DashBoard\\School Managment DashBoard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\MySqlDBConnector.csproj": {
+    "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\MySqlDBConnector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\MySqlDBConnector.csproj",
+        "projectUniqueName": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\MySqlDBConnector.csproj",
         "projectName": "MySqlDBConnector",
-        "projectPath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\MySqlDBConnector.csproj",
+        "projectPath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\MySqlDBConnector.csproj",
         "packagesPath": "C:\\Users\\Maleesha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\obj\\",
+        "outputPath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\School Managment DashBoard\\School Managment DashBoard.csproj": {
+    "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\School Managment DashBoard\\School Managment DashBoard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\School Managment DashBoard\\School Managment DashBoard.csproj",
+        "projectUniqueName": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\School Managment DashBoard\\School Managment DashBoard.csproj",
         "projectName": "School Managment DashBoard",
-        "projectPath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\School Managment DashBoard\\School Managment DashBoard.csproj",
+        "projectPath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\School Managment DashBoard\\School Managment DashBoard.csproj",
         "packagesPath": "C:\\Users\\Maleesha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\School Managment DashBoard\\obj\\",
+        "outputPath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\School Managment DashBoard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -97,8 +97,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\MySqlDBConnector.csproj": {
-                "projectPath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\MySqlDBConnector.csproj"
+              "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\MySqlDBConnector.csproj": {
+                "projectPath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\MySqlDBConnector.csproj"
               }
             }
           }

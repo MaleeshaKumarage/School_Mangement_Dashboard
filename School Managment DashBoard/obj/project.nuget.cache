@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "14fNnARJS7RicdNxSmPcsVA20jQ7K0uNqOv/gRAVaiFWcwT/dz2cAz3/fkNFGYY0618LvvMMOPE/XVqrDLUvIw==",
+  "dgSpecHash": "J8UxNXyI0aEjlx8bnuVGsUECBANnpCmU7y51Tmlg74di0f596pCmuE48H7J2sT/8K/81mku78M2tD3fK6/oGBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\School Managment DashBoard\\School Managment DashBoard.csproj",
+  "projectFilePath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\School Managment DashBoard\\School Managment DashBoard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maleesha\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Maleesha\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

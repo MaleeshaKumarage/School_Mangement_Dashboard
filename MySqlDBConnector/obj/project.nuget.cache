@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4kOKn6MU2ESeR68KIVbnVK2b4i4TwhOz36AHjtNDwcCeqGTATcNMkrbAuu61y6qeVTsc2JPpXHMLuLttOprSJw==",
+  "dgSpecHash": "UxckO1U3iVuT322IskzP60Ab1VIWiNIb7pPV7F5LYgTukqLp6dY9McoduJa7OFTnQ469fpVUySYp05BC5b5XLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maleesha\\source\\repos\\School Managment DashBoard\\MySqlDBConnector\\MySqlDBConnector.csproj",
+  "projectFilePath": "C:\\Users\\Maleesha\\Source\\Repos\\School_Mangement_Dashboard\\MySqlDBConnector\\MySqlDBConnector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maleesha\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Maleesha\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

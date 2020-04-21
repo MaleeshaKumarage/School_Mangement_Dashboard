@@ -76,6 +76,21 @@ namespace MySqlDBConnector
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 try
                 {
+
+                    cmd.Parameters.Add(new MySqlParameter("Id", student.Id));
+                    cmd.Parameters.Add(new MySqlParameter("RegistrationNo", student.RegistrationNo));
+                    cmd.Parameters.Add(new MySqlParameter("FirstName", student.FirstName));
+                    cmd.Parameters.Add(new MySqlParameter("MiddleName", student.MiddleName));
+                    cmd.Parameters.Add(new MySqlParameter("LastName", student.LastName));
+                    cmd.Parameters.Add(new MySqlParameter("Address_Line1", student.Address_Line1));
+                    cmd.Parameters.Add(new MySqlParameter("Address_Line2", student.Address_Line2));
+                    cmd.Parameters.Add(new MySqlParameter("Address_Line3", student.Address_Line3));
+                    cmd.Parameters.Add(new MySqlParameter("Guardian_Name", student.Guardian_Name));
+                    cmd.Parameters.Add(new MySqlParameter("LandPhoneNo", student.LandPhoneNo));
+                    cmd.Parameters.Add(new MySqlParameter("MobileNo", student.MobileNo));
+                    cmd.Parameters.Add(new MySqlParameter("DOB", student.DOB));
+                    cmd.Parameters.Add(new MySqlParameter("Gender", student.Gender));
+                    
                     //Execute command
                     cmd.ExecuteNonQuery();
                 }

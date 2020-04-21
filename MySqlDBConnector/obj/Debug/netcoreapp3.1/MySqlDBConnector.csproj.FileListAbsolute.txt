@@ -7,3 +7,12 @@ C:\Users\Maleesha\source\repos\School Managment DashBoard\MySqlDBConnector\bin\D
 C:\Users\Maleesha\source\repos\School Managment DashBoard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.csproj.CoreCompileInputs.cache
 C:\Users\Maleesha\source\repos\School Managment DashBoard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.dll
 C:\Users\Maleesha\source\repos\School Managment DashBoard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.pdb
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\bin\Debug\netcoreapp3.1\MySqlDBConnector.deps.json
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\bin\Debug\netcoreapp3.1\MySqlDBConnector.dll
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\bin\Debug\netcoreapp3.1\MySqlDBConnector.pdb
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.csprojAssemblyReference.cache
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.csproj.CoreCompileInputs.cache
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.AssemblyInfoInputs.cache
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.AssemblyInfo.cs
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.dll
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\MySqlDBConnector\obj\Debug\netcoreapp3.1\MySqlDBConnector.pdb
