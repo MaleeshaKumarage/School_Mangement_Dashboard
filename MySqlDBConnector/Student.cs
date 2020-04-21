@@ -24,5 +24,21 @@ namespace MySqlDBConnector
         {
             Id = Guid.NewGuid();
         }
+        public Student(Guid Id, int RegistrationNo, string FirstName, string MiddleName, string LastName, string Address_Line1, string Address_Line2, string Address_Line3,string Guardian_Name,long LandPhoneNo, long MobileNo,string DOB,string Gender)
+        {
+            this.Id = Id;
+            this.RegistrationNo = RegistrationNo;
+            this.FirstName = FirstName;
+            this.MiddleName = MiddleName;
+            this.LastName = LastName;
+            this.Address_Line1 = Address_Line1;
+            this.Address_Line2 = Address_Line2;
+            this.Address_Line3 = Address_Line3;
+            this.Guardian_Name = Guardian_Name;
+            this.LandPhoneNo = LandPhoneNo;
+            this.MobileNo = MobileNo;
+            this.DOB = DOB;
+            this.Gender = Gender;
+    }
     }
 }

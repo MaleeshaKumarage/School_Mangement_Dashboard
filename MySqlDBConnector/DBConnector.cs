@@ -6,17 +6,17 @@ namespace MySqlDBConnector
 {
     public class DBConnector
     {
-        public static string connectionString= "Server=148.72.232.179;Database= Student_mgt;Uid=maleesha;Pwd=mal33sha";
+        public static string connectionString = "Server=148.72.232.179;Database= Student_mgt;Uid=maleesha;Pwd=mal33sha";
         private MySqlConnection connection;
         public DBConnector()
         {
             Initialize();
         }
-      
+
 
         //Initialize values
         private void Initialize()
-        {            
+        {
 
             connection = new MySqlConnection(connectionString);
         }
@@ -37,7 +37,7 @@ namespace MySqlDBConnector
                 switch (ex.Number)
                 {
                     case 0:
-                       Console.WriteLine("Cannot connect to server.  Contact administrator");
+                        Console.WriteLine("Cannot connect to server.  Contact administrator");
                         break;
 
                     case 1045:
@@ -90,7 +90,7 @@ namespace MySqlDBConnector
                     cmd.Parameters.Add(new MySqlParameter("MobileNo", student.MobileNo));
                     cmd.Parameters.Add(new MySqlParameter("DOB", student.DOB));
                     cmd.Parameters.Add(new MySqlParameter("Gender", student.Gender));
-                    
+
                     //Execute command
                     cmd.ExecuteNonQuery();
                 }
@@ -99,7 +99,7 @@ namespace MySqlDBConnector
 
                     throw ex;
                 }
-               
+
 
                 //close connection
                 this.CloseConnection();
@@ -129,7 +129,7 @@ namespace MySqlDBConnector
         //Delete statement
         public void Delete()
         {
-            string query = "DELETE FROM tableinfo WHERE name='John Smith'";
+            string query = "DELETE FROM Student WHERE RegistrationNo='@regNo'";
 
             if (this.OpenConnection() == true)
             {
@@ -139,15 +139,14 @@ namespace MySqlDBConnector
             }
         }
         //Select statement
-        public List<string>[] Select()
+        public List<Student> Select()
         {
-            string query = "SELECT * FROM tableinfo";
+            string query = "SELECT * FROM Student";
 
             //Create a list to store the result
-            List<string>[] list = new List<string>[3];
-            list[0] = new List<string>();
-            list[1] = new List<string>();
-            list[2] = new List<string>();
+            List<Student> studentList = new List<Student>();
+
+
 
             //Open connection
             if (this.OpenConnection() == true)
@@ -160,9 +159,8 @@ namespace MySqlDBConnector
                 //Read the data and store them in the list
                 while (dataReader.Read())
                 {
-                    list[0].Add(dataReader["id"] + "");
-                    list[1].Add(dataReader["name"] + "");
-                    list[2].Add(dataReader["age"] + "");
+                    studentList.Add(new Student(Guid.Parse(dataReader["Id"].ToString()), Int32.Parse(dataReader["RegistrationNo"].ToString()), dataReader["FirstName"].ToString(), dataReader["MiddleName"].ToString(), dataReader["LastName"].ToString(), dataReader["Address_Line1"].ToString(), dataReader["Address_Line2"].ToString(), dataReader["Address_Line3"].ToString(), dataReader["Guardian_Name"].ToString(), Int64.Parse(dataReader["LandPhoneNo"].ToString()), Int64.Parse(dataReader["MobileNo"].ToString()), dataReader["DOB"].ToString(), dataReader["Gender"].ToString()));
+
                 }
 
                 //close Data Reader
@@ -172,11 +170,11 @@ namespace MySqlDBConnector
                 this.CloseConnection();
 
                 //return list to be displayed
-                return list;
+                return studentList;
             }
             else
             {
-                return list;
+                return null;
             }
         }
     }

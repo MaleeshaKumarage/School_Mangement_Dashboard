@@ -21,16 +21,35 @@ namespace School_Managment_DashBoard.Models
         public string Guardian_Name { get; set; }
         public long LandPhoneNo { get; set; }
         public long MobileNo { get; set; }
-        
+
         public string DOB { get; set; }
         public string Gender { get; set; }
 
+        public StudentViewModel(int RegistrationNo, string FirstName, string MiddleName, string LastName, string Address_Line1, string Address_Line2, string Address_Line3, string Guardian_Name, long LandPhoneNo, long MobileNo, string DOB, string Gender)
+        {
+            this.RegistrationNo = RegistrationNo;
+            this.FirstName = FirstName;
+            this.MiddleName = MiddleName;
+            this.LastName = LastName;
+            this.Address_Line1 = Address_Line1;
+            this.Address_Line2 = Address_Line2;
+            this.Address_Line3 = Address_Line3;
+            this.Guardian_Name = Guardian_Name;
+            this.LandPhoneNo = LandPhoneNo;
+            this.MobileNo = MobileNo;
+            this.DOB = DOB;
+            this.Gender = Gender;
+        }
+
+        public StudentViewModel()
+        {
+        }
 
         internal Student ToStudent()
         {
             return new Student()
             {
-                
+
                 RegistrationNo = this.RegistrationNo,
                 FirstName = this.FirstName,
                 MiddleName = this.MiddleName,
@@ -41,35 +60,40 @@ namespace School_Managment_DashBoard.Models
                 Guardian_Name = this.Guardian_Name,
                 LandPhoneNo = this.LandPhoneNo,
                 MobileNo = this.MobileNo,
-                DOB =this.DOB,
+                DOB = this.DOB,
                 Gender = this.Gender,
-               
+
 
             };
         }
-    }
-    internal static class CovidResourceEntityExtentions
-    {
-        public static StudentViewModel ToStudentViewModel(this Student entity)
+
+        public List<StudentViewModel> ToStudentViewModel(List<Student> entity)
         {
-            return new StudentViewModel()
+            List<StudentViewModel> stdList = new List<StudentViewModel>();
+
+            foreach (var student in entity)
             {
-               
-                RegistrationNo = entity.RegistrationNo,
-                FirstName = entity.FirstName,
-                MiddleName = entity.MiddleName,
-                LastName = entity.LastName,
-                Address_Line1 = entity.Address_Line1,
-                Address_Line2 = entity.Address_Line2,
-                Address_Line3 = entity.Address_Line3,
-                Guardian_Name = entity.Guardian_Name,
-                LandPhoneNo = entity.LandPhoneNo,
-                MobileNo = entity.MobileNo,
-                DOB = entity.DOB,
-                Gender = entity.Gender,
-            };
+                stdList.Add(new StudentViewModel(
+                    RegistrationNo = student.RegistrationNo,
+                    FirstName = student.FirstName,
+                    MiddleName = student.MiddleName,
+                    LastName = student.LastName,
+                    Address_Line1 = student.Address_Line1,
+                    Address_Line2 = student.Address_Line2,
+                    Address_Line3 = student.Address_Line3,
+                    Guardian_Name = student.Guardian_Name,
+                    LandPhoneNo = student.LandPhoneNo,
+                    MobileNo = student.MobileNo,
+                    DOB = student.DOB,
+                    Gender = student.Gender
+                    ));
+            }
+            return stdList;            
         }
     }
+
+
+
 
 
 }

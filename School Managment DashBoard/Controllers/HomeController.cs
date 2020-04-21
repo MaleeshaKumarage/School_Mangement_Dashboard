@@ -20,7 +20,7 @@ namespace School_Managment_DashBoard.Controllers
 
         public IActionResult Index()
         {
-           return View();
+            return View();
         }
 
         public IActionResult Add_Student()
@@ -30,7 +30,7 @@ namespace School_Managment_DashBoard.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add_Student( StudentViewModel student)
+        public IActionResult Add_Student(StudentViewModel student)
         {
             new MySqlDBConnector.DBConnector().Insert(student.ToStudent());
 
@@ -40,6 +40,17 @@ namespace School_Managment_DashBoard.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult Delete_Student()
+        {
+            return View();
+        }
+
+        public IActionResult Student_List()
+        {
+            var data = new MySqlDBConnector.DBConnector().Select();
+            return View(new StudentViewModel().ToStudentViewModel(data));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

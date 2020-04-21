@@ -256,3 +256,5 @@ C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\School Managment DashB
 C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\School Managment DashBoard\obj\Debug\netcoreapp3.1\School Managment DashBoard.dll
 C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\School Managment DashBoard\obj\Debug\netcoreapp3.1\School Managment DashBoard.pdb
 C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\School Managment DashBoard\obj\Debug\netcoreapp3.1\School Managment DashBoard.genruntimeconfig.cache
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\School Managment DashBoard\obj\Debug\netcoreapp3.1\Razor\Views\Home\Student_List.cshtml.g.cs
+C:\Users\Maleesha\Source\Repos\School_Mangement_Dashboard\School Managment DashBoard\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete_Student.cshtml.g.cs
